@@ -1,0 +1,28 @@
+#user-name {
+    border-bottom: 1px solid gray;
+    height: 3rem;
+    margin-bottom: 0;
+}
+
+#email-phone-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.email-phone {
+    margin: 10px;
+}
+
+#school {
+    margin-bottom: -5px;
+}
+
+#major {
+    margin-left: 20px;
+}
+
+.supplement-info {
+    margin-left: 20px;
+}
