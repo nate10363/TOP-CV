@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
 
-function Input({ change, title, type, initVal, phText }) {
-    const [value, setNewValue] = useState(initVal);
+// function Input({ change, title, type, phText, className, id }) {
+function Input({ title, type, phText, className, id }) {
+    // const [value, setNewValue] = useState(initVal);
 
-    function handleChange(event) {
-        let value = event.target.value;
-        setNewValue(value);
-        change(value);
-    }
+    // function handleChange(event) {
+    //     let value = event.target.value;
+    //     // setNewValue(value);
+    //     change(value);
+    // }
 
     return (
         <div>
@@ -16,10 +16,11 @@ function Input({ change, title, type, initVal, phText }) {
                 {title}
                 <br />
                 <input
-                    className="input"
+                    className={className}
+                    id={id}
                     placeholder={phText}
-                    value = {value}
-                    onChange={handleChange}
+                    // value = {value}
+                    // onChange={handleChange}
                     type={type}
                     required
                 />

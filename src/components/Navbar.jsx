@@ -4,32 +4,41 @@ import Person from "./Person"
 import Education from "./Education"
 import Experience from "./Experience"
 
-function Navbar({ setName, setEmail, setPhone, setSchool, setMajor, setGraduationDate, setCompany, setPosition, setStartDate, setEndDate, setResponsibilities }) {
+function Navbar({ 
+    personArray,
+    setPersonArray,
+
+    educationArray,
+    setEducationArray,
+
+    experienceArray,
+    setExperienceArray,
+}) {
 
 
     return (
         <div>
             <h1>Personal Information</h1>
             <Person 
-                setName={setName} 
-                setEmail={setEmail} 
-                setPhone={setPhone}
+                personArray={personArray}
+                setPersonArray={setPersonArray}
             />
             
             <h1>Education</h1>
             <Education 
-                setSchool={setSchool} 
-                setMajor={setMajor} 
-                setGraduationDate={setGraduationDate}
+                educationArray={educationArray}
+                setEducationArray={setEducationArray}
             />
 
             <h1>Experience</h1>
             <Experience 
-                setCompany={setCompany}
-                setPosition={setPosition}
-                setStartDate={setStartDate}
-                setEndDate={setEndDate}
-                setResponsibilities={setResponsibilities}
+
+
+                experienceArray={experienceArray}
+                setExperienceArray={setExperienceArray}
+
+
+
             />
 
 

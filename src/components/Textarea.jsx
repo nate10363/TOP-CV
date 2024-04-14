@@ -1,14 +1,16 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+// import { useState } from "react";
 
-function Textarea({ change, title, type, initVal, phText, rows, cols }) {
-    const [value, setNewValue] = useState(initVal);
+// function Textarea({ change, title, type, phText, rows, cols, className, id }) {
 
-    function handleChange(event) {
-        let value = event.target.value;
-        setNewValue(value);
-        change(value);
-    }
+function Textarea({ title, type, phText, rows, cols, className, id }) {
+    // const [value, setNewValue] = useState(initVal);
+
+    // function handleChange(event) {
+    //     let value = event.target.value;
+    //     // setNewValue(value);
+    //     change(value);
+    // }
 
     return (
         <div>
@@ -16,10 +18,11 @@ function Textarea({ change, title, type, initVal, phText, rows, cols }) {
                 {title}
                 <br />
                 <textarea
-                    className="input"
+                    className={className}
+                    id={id}
                     placeholder={phText}
-                    value = {value}
-                    onChange={handleChange}
+                    // value = {value}
+                    // onChange={handleChange}
                     type={type}
                     rows={rows}
                     cols={cols}
